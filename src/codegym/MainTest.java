@@ -18,7 +18,10 @@ public class MainTest {
         System.out.println("--------------------");
         System.out.println("In Order Traversal: ");
         bin.displayInorder(bin.root);
-        System.out.println();
         System.out.println("Check Whether Node With Value 4 exists: " + bin.findNode(4));
+        bin.delete(2);
+        System.out.println("Delete Node with no children (2): ");
+        bin.displayInorder(bin.root);
+
     }
 }
